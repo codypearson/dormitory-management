@@ -18,10 +18,10 @@ class UnitController extends Controller
         ]);
     }
 
-    public function unitDetail($unitId)
+    public function unitDetail(Unit $unit)
     {
         return view('unit_detail', [
-            'unit' => Unit::find($unitId)
+            'unit' => $unit
         ]);
     }
 }

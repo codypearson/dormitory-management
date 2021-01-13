@@ -38,6 +38,7 @@ class StudentController extends Controller
         $student->gender = $request->gender;
         $student->dob = $request->dob;
         $student->student_id = $request->student_id;
+        $student->home_address = $request->home_address;
         $student->phone_number = $request->phone;
         $student->room_id = $request->room_id;
 

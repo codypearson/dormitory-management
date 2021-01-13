@@ -24,7 +24,7 @@ Route::get('/', function () {
 Route::get('/dormitories', DormitoryController::class)->name('dormitories');
 Route::get('/floors/{dormitoryId}', FloorController::class)->name('floors');
 Route::get('/units/{floorId}', [UnitController::class, 'allUnits'])->name('units');
-Route::get('/unit-detail/{unitId}', [UnitController::class, 'unitDetail'])->name('unit-detail');
+Route::get('/unit-detail/{unit}', [UnitController::class, 'unitDetail'])->name('unit-detail');
 Route::get('/students', [StudentController::class, 'list'])->name('student-list');
 Route::get('/edit-student/{student?}', [StudentController::class, 'form'])->name('edit-student');
 

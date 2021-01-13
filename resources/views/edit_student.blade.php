@@ -38,6 +38,12 @@
             @enderror
         </div>
         <div class="form-group">
+            <label for="address-field">Home Address</label>
+            <textarea id="address-field" class="form-control" name="home_address">
+                {{ $student->home_address ?? old('home_address') }}
+            </textarea>
+        </div>
+        <div class="form-group">
             <label for="phone-field">Phone Number</label>
             <input id="phone-field" class="form-control @error('phone') is-invalid @enderror" name="phone" type="tel" value="{{ $student->phone_number ?? old('phone') }}" />
             @error('phone')
