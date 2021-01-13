@@ -1,0 +1,12 @@
+.room {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.unit {
+    cursor: pointer;
+}
+
+.right-align {
+    text-align: right;
+}
